@@ -4,6 +4,7 @@ import { buttonVariants } from '@/components/ui/button'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { MobileDropDown } from '@/app/(guest)/_components/Navbar/MobileDropDown'
 import { universityName } from '@/constants/app'
+import { ModeToggle } from '@/components/mode-toggle'
 
 const AuthNavbar = () => {
     return (
@@ -31,6 +32,7 @@ const AuthNavbar = () => {
                             >
                                 login 
                             </Link>
+                            <ModeToggle />
                             <MobileDropDown />
                         </div>
                     </div>
