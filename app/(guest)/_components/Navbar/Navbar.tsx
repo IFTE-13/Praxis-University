@@ -1,7 +1,7 @@
 import React from 'react'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { SubNavigation } from '@/app/(guest)/_components/Navbar/SubNavigation'
-import AuthNavbar from './AuthNavigation'
+import AuthNavbar from '@/app/_components/AuthNavigation'
 
 const Navbar = () => {
     return (
