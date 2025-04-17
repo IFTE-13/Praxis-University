@@ -17,7 +17,6 @@ const AuthNavbar = () => {
                             <Link 
                                 className={buttonVariants({
                                     variant: "outline",
-                                    effect: "shineHover",
                                     size: "sm"
                                 })} 
                                 href={"/contact-us"}>
@@ -25,10 +24,9 @@ const AuthNavbar = () => {
                             </Link>
                             <Link 
                                 className={`${buttonVariants({
-                                    variant: "secondary",
+                                    variant: "outline",
                                     size: "sm",
-                                    effect: "shineHover"
-                                })} bg-black text-white`}
+                                })}`}
                                 href="/login"
                             >
                                 login 
