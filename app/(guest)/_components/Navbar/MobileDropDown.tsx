@@ -10,12 +10,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
-import { MenuItem, SubMenuItems } from "@/constants/SubNavigationList"
 import Link from "next/link";
 import { AlignRight } from "lucide-react";
+import { IMenuType } from "./types";
+import { menuItems } from "./data";
 
 export function MobileDropDown() {
-  const renderMenuItem = (item: MenuItem, index: number) => {
+  const renderMenuItem = (item: IMenuType, index: number) => {
     if (item.isSubmenu) {
       return (
         <DropdownMenuSub key={index}>
@@ -28,7 +29,7 @@ export function MobileDropDown() {
           </DropdownMenuSubTrigger>
           <DropdownMenuPortal>
             <DropdownMenuSubContent>
-              {item.subItems && item.subItems.map((subItem: MenuItem, subIndex: number) => {
+              {item.subItems && item.subItems.map((subItem: IMenuType, subIndex: number) => {
                 if (subItem.isSubmenu) {
                   return (
                     <DropdownMenuSub key={subIndex}>
@@ -41,7 +42,7 @@ export function MobileDropDown() {
                       </DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
                         <DropdownMenuSubContent>
-                          {subItem.subItems && subItem.subItems.map((thirdItem: MenuItem, thirdIndex: number) => (
+                          {subItem.subItems && subItem.subItems.map((thirdItem: IMenuType, thirdIndex: number) => (
                             <DropdownMenuItem key={thirdIndex}>
                               {thirdItem.link ? (
                                 <Link href={thirdItem.link}>{thirdItem.label}</Link>
@@ -87,7 +88,7 @@ export function MobileDropDown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuGroup>
-          {SubMenuItems[0].items.map(renderMenuItem)}
+          {menuItems.map(renderMenuItem)}
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
