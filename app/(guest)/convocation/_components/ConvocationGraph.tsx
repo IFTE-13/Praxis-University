@@ -23,11 +23,11 @@ export const description = "An interactive bar chart"
 const chartConfig = {
   total: {
     label: "Total",
-    color: "#000000",
+    color: "#a21caf",
   },
   male: {
     label: "Male",
-    color: "#2dd4bf",
+    color: "#059669",
   },
   female: {
     label: "Female",
