@@ -32,7 +32,7 @@ const renderMenuItems = (items: MenuItem[]) => {
 
 export function SubNavigation() {
   return (
-    <Menubar>
+    <Menubar className="border-none bg-none">
       {SubMenuItems[0].items.map((menuItem, index) => (
         <React.Fragment key={index}>
           {menuItem.isSubmenu && menuItem.subItems && menuItem.subItems.length > 0 ? (

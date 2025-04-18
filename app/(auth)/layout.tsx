@@ -7,11 +7,9 @@ export default function AuthLayout({
     children: React.ReactNode;
   }>) {
     return (
-      <html>
-        <body>
-          <AuthNavbar />
-          {children}
-        </body>
-      </html>
+      <div>
+        <AuthNavbar />
+        {children}
+      </div>
     );
   }

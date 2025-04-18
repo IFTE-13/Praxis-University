@@ -4,35 +4,28 @@ import { buttonVariants } from '@/components/ui/button'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { MobileDropDown } from '@/app/(guest)/_components/Navbar/MobileDropDown'
 import { universityName } from '@/constants/app'
-import { ModeToggle } from '@/components/mode-toggle'
+import { ToggleMode } from '@/components/ToggleMode'
+import { LogIn } from 'lucide-react'
 
 const AuthNavbar = () => {
     return (
-        <nav className='border-b border-gray-200'>
+        <nav className='backdrop-blur-sm md:backdrop-blur-none'>
         <MaxWidthWrapper>
             <div className='flex h-14 items-center justify-between'>
                         <Link href="/" className='flex z-40 font-semibold'>
                             <span>{universityName}</span>
                         </Link>
-                        <div className='items-center space-x-4 sm:flex'>
-                            <Link 
-                                className={buttonVariants({
-                                    variant: "outline",
-                                    size: "sm"
-                                })} 
-                                href={"/contact-us"}>
-                                contact us
-                            </Link>
+                        <div className='items-center space-x-0 md:flex'>
                             <Link 
                                 className={`${buttonVariants({
-                                    variant: "outline",
+                                    variant: "ghost",
                                     size: "sm",
                                 })}`}
                                 href="/login"
                             >
-                                login 
+                                <LogIn /> 
                             </Link>
-                            <ModeToggle />
+                            <ToggleMode />
                             <MobileDropDown />
                         </div>
                     </div>

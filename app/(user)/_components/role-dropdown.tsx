@@ -1,6 +1,6 @@
 "use client"
 import * as React from "react"
-import { Contact, FileUser, ShieldCheck, UserCircle, Users } from "lucide-react"
+import { Contact, FileUser, ShieldCheck, UserCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,

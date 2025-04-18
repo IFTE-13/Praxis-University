@@ -11,7 +11,6 @@ import {
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { universityName } from "@/constants/app";
 import Link from "next/link";
-import { ArrowRightIcon } from "lucide-react";
 
 const images = [
   "https://images.unsplash.com/20/cambridge.JPG?w=1500",

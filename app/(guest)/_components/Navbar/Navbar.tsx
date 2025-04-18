@@ -5,9 +5,9 @@ import AuthNavbar from '@/app/_components/AuthNavigation'
 
 const Navbar = () => {
     return (
-        <div className='sticky h-14 md:h-14 lg:h-28 insex-x-0 top-0 z-30 w-full bg-white'>
+        <div className='sticky h-14 md:h-14 lg:h-28 insex-x-0 top-0 z-30 w-full backdrop-blur-md border-b'>
             <AuthNavbar /> 
-            <nav className="border-b border-gray-200 h-14 lg:flex items-center hidden">
+            <nav className="h-14 lg:flex items-center hidden">
                 <MaxWidthWrapper>
                     <SubNavigation />
                 </MaxWidthWrapper>
