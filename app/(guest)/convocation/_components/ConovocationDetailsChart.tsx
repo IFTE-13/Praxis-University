@@ -6,6 +6,7 @@ import {
   ChartContainer,
   ChartTooltip,
 } from "@/components/ui/chart"
+import { CalendarRange } from "lucide-react";
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart } from "recharts"
 
 interface ConvocationDataItem {
@@ -14,6 +15,8 @@ interface ConvocationDataItem {
   female: number;
   undergraduate?: number;
   graduate?: number;
+  date: string;
+  year: number;
 }
 
 interface ConovocationDetailsChartProps {
@@ -95,6 +98,7 @@ export function ConovocationDetailsChart({ convocatonData }: ConovocationDetails
             <ChartTooltip />
           </RadarChart>
         </ChartContainer>
+        <p className='pt-4 flex flex-row items-center gap-x-3 font-semibold'><CalendarRange size={15}/>{convocatonData.date}, {convocatonData.year}</p>
       </CardContent>
     </Card>
   );
