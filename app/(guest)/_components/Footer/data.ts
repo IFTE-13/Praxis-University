@@ -1,14 +1,7 @@
-export type Link = {
-    label: string;
-    href: string;
-  };
-  
-export type FooterItems = {
-    title: string;
-    links: Link[];
-  };
-  
-export const footerItems: FooterItems[] = [
+import { IItemType, ISocialType } from "./types";
+import { Facebook, Instagram, Twitter, Github, Linkedin } from 'lucide-react';
+
+export const items: IItemType[] = [
     {
       title: "academic",
       links: [
@@ -43,4 +36,31 @@ export const footerItems: FooterItems[] = [
       ],
     },
   ];
-  
+
+  export const links: ISocialType[] = [
+    {
+      href: '#',
+      icon: Facebook,
+      label: 'Facebook',
+    },
+    {
+      href: '#',
+      icon: Instagram,
+      label: 'Instagram',
+    },
+    {
+      href: '#',
+      icon: Twitter,
+      label: 'Twitter',
+    },
+    {
+      href: '#',
+      icon: Github,
+      label: 'GitHub',
+    },
+    {
+      href: '#',
+      icon: Linkedin,
+      label: 'Linkedin',
+    },
+  ];

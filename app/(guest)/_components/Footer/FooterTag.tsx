@@ -7,8 +7,8 @@ const FooterTag = () => {
 
   return (
     <footer className="sticky bottom-0 z-20">
-      <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
-        <p className="text-white md:block transition-colors">All rights reseved by <Link href={"/"} className='hover:text-white/60'>Praxis University</Link>@{year} </p>
+      <div className="flex justify-center items-center py-3 bg-card-foreground text-sm gap-3">
+        <p className="text-accent transition-colors">All rights reseved by <Link href={"/"} className='hover:text-muted-foreground'>Praxis University</Link> @ {year} </p>
       </div>
     </footer>
   )

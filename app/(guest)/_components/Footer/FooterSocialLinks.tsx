@@ -1,17 +1,18 @@
 import React from 'react'
-import { SocialLink, socialLinks } from '@/constants/SocialLinkList'
+import { ISocialType } from './types'
+import { links } from './data'
 
 const FooterSocialLinks = () => {
   return (
-    <div className="flex gap-4 text-slate-600 sm:justify-center">
-        {socialLinks.map(({ label, href, icon: Icon}: SocialLink, index: number) => (
+    <div className="flex gap-4 sm:justify-center">
+        {links.map(({ label, href, icon: Icon}: ISocialType, index: number) => (
             <a
             key={index}
             href={href}
             className="block transition-opacity text-inherit hover:opacity-80"
             aria-label={label}
             >
-                <Icon />
+              <Icon />
             </a>
         ))}
     </div>

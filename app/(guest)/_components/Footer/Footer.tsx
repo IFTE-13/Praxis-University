@@ -15,10 +15,10 @@ const Footer = () => {
                     <Image src={logo} alt="Logo" width={400} height={400} className="mx-auto" />
                     <FooterLinks />
                 </div>
-                <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-slate-200 md:flex-row md:justify-between">
-                    <p className="block mb-4 text-sm text-center text-slate-500 md:mb-0">
+                <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t md:flex-row md:justify-between">
+                    <p className="block mb-4 text-sm text-center text-muted-foreground md:mb-0">
                         Powered by Praxis University {" "}
-                        <Link href={"/software-development-department"} className='text-black'>Software Development Department</Link>
+                        <Link href={"/software-development-department"} className='text-accent-foreground hover:text-muted-foreground'>Software Development Department</Link>
                     </p>
                     <FooterSocialLinks />
                 </div>
