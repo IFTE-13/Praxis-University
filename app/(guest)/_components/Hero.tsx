@@ -77,7 +77,7 @@ export default function Hero() {
           <p className="mt-3 max-w-3xl text-lg leading-8">
             Empowering students to reach their full potential through a well-rounded education and supportive community.
           </p>
-          <Button className="border mt-6">
+          <Button className="mt-6 bg-transparent" variant={"outline"}>
             <Link href="/about" prefetch={false}>
               Learn More
             </Link>
