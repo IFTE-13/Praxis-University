@@ -1,6 +1,6 @@
 "use client"
  
-import { Payment } from "@/lib/types";
+import { Payment } from "@/utils/types";
 import { ColumnDef } from "@tanstack/react-table";
 import { MoreHorizontal } from "lucide-react"
 import { Button } from "@/components/ui/button";
